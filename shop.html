@@ -18,6 +18,22 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/index.css" />
+
+    <style>
+      .product img {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        object-fit: cover;
+      }
+      .pagination a {
+        color: coral;
+      }
+      .pagination li:hover {
+        color: aliceblue;
+        background-color: coral;
+      }
+    </style>
   </head>
   <body>
     <!------NavigationBar------->
@@ -43,11 +59,11 @@
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Shop</a>
+              <a class="nav-link" href="shop.html">Shop</a>
             </li>
 
             <li class="nav-item">
@@ -70,11 +86,11 @@
     <!------Featured------->
     <section id="featured" class="my-5 py-5">
       <div class="container mt-5 py-5">
-        <h3>Our Featured</h3>
+        <h3>Our Products</h3>
         <hr />
         <p>Here you can check out our Featured Products</p>
       </div>
-      <div class="row mx-auto container-fluid">
+      <div class="row mx-auto container">
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
           <img src="assets/imgs/featured1.jpg" alt="" class="img-fluid mb-3" />
           <div class="star">
@@ -216,7 +232,7 @@
         </div>
 
         <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img src="assets/imgs/featured7.jpg" alt="" class="img-fluid mb-3" />
+          <img src="assets/imgs/clothes2.jpg" alt="" class="img-fluid mb-3" />
           <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -224,7 +240,7 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <h5 class="p-name">URRU Men's Polo Shirt and Shorts</h5>
+          <h5 class="p-name">URRU Men's Polo Jacket</h5>
           <h4 class="p-price">Kshs5000</h4>
           <button class="buy-btn">Buy Now</button>
         </div>
@@ -300,6 +316,18 @@
           <h4 class="p-price">Kshs2,000</h4>
           <button class="buy-btn">Buy Now</button>
         </div>
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination mt-5">
+            <li class="page-item">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
       </div>
     </section>
 
